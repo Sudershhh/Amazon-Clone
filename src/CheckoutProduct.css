@@ -1,0 +1,100 @@
+.checkoutproduct{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+.checkoutproduct_rating{
+    display: flex;
+}
+.checkoutproduct_info{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.checkoutproduct_info > div > button{
+    background: #f0c14b;
+    border-radius: 2px;
+    border: 1px solid;
+    width: 150px;
+    height: 30px;
+    color: #111;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    
+}
+
+.checkoutproduct_image{
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+}
+.checkoutproduct_title{
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.quantity
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.quantity > p{
+    margin-top: 10px;
+}
+
+.button-ctrl
+{
+    max-width: 100px;
+}
+
+.removefrombasket:hover {
+    animation: removefrombasket 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes removefrombasket {
+0% {
+
+      transform: rotateX(0);
+}
+50% {
+
+      transform: rotateX(-180deg);
+}
+100%{
+    transform: rotateX(0);
+}
+}
+
+
+
+
+
+@media (max-width: 450px)
+{
+   .checkoutproduct_image{
+       width:50%;
+       height: auto;
+   }
+    
+    .checkoutproduct_title{
+            font-size: 16px;
+            font-weight: 550;
+    }
+    
+
+.quantity
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+}
